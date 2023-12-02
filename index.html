@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Buffalo Wings</title>
+    <style>
+      h1 {
+        text-align: center;
+        color: coral;
+        font-family: 'Hedvig Letters Serif', serif;
+        font-weight:900;
+      }
+      img {
+        display: block;
+        margin: 0 auto;
+        width: 0 auto;
+        max-width: 100%;
+      }
+      h2 {
+        text-align: center;
+        color: coral;
+        border: 1px solid whitesmoke;
+        border-radius: 15px;
+        padding: 15px;
+        font-family: 'Hedvig Letters Serif', serif;
+      }
+      h2:hover{
+        transform: scale(1.5);
+      }
+      body {
+        background-image: url("https://s3.amazonaws.com/shecodesio-production/uploads/files/000/105/607/original/buff.jpg?1701522041");
+        background-size: cover;
+      }
+
+      p{
+        color: whitesmoke
+      }
+      button {
+        text-align: center;
+        display: block;
+        box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.2);
+        font-family: 'Hedvig Letters Serif', serif;
+      }
+      button:hover {
+        cursor: pointer;
+        background-color: coral;
+        color: whitesmoke;
+      }
+
+      a {
+        text-align: center;
+        display: block;
+        color: coral;
+        font-family: 'Hedvig Letters Serif', serif;
+        
+      }
+
+      .contain{
+        max-width: 500px;
+        margin: 0 auto;
+        padding: 50px;
+
+
+      }
+      .wing-history{
+        display: flex;
+        justify-content: center;
+        justify-content: space-evenly;
+        border: 1px solid whitesmoke;
+        border-radius: 10px;
+        padding: 10px;
+        background: lightslategray;
+      }
+    </style>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Hedvig+Letters+Serif:opsz@12..24&display=swap" rel="stylesheet">
+  </head>
+
+  <body>
+    <div class="contain">
+    <h1><strong>Buffalo Wings & Beyond</strong></h1>
+    <img
+      src=
+"https://s3.amazonaws.com/shecodesio-production/uploads/files/000/105/607/original/buff.jpg?1701522041"
+      alt="Buffalo wing platter of flats"
+    />
+    <br />
+    <h2>All flats of course</h2>
+    <hr />
+    <div class="wing-history">
+    <p>
+      A buffalo wing, in American cuisine, is an unbreaded chicken-wing section
+      (<em>flats or drumettes</em>) that is generally deep-fried then coated or dipped in
+      a sauce consisting of a vinegar-based cayenne pepper, hot sauce, and melted
+      butter prior to serving. They are traditionally served hot, along with
+      celery & carrot sticks. Also, they traditionally come with a dip option of blue cheese or ranch dressing. Buffalo wings are named after Buffalo, New York, where they were
+      invented; they have no relation to the animal.
+    </p>
+
+    <p>
+      As the market expanded, restaurants began to create a variety of sauces in
+      addition to buffalo sauce. Some of these new sauces were influenced by
+      Chinese, Japanese, Thai, Carribean, and Indian cuisines. Other flavors
+      created by restaurants include but aren't limited to unique combinations such as Blueberry BBQ Wing Sauce, Maple/Bacon Glaze, and the popular Lemon Pepper from Miami.
+      </div>
+      <br />
+      <a href="https://www.delish.com/cooking/g25808361/wing-sauce-recipes/"
+        >Click here to check out 35 wing sauce recipes</a
+      >
+    </p>
+    <button>Wing Lovers Click Here</button>
+    <hr />
+
+    <script>
+      function flatsOnly() {
+        let wings = prompt("Drums or Flats?");
+        let firstName = prompt("What is your first name?");
+let h1=document.querySelector("h1")
+h1.innerHTML= "Not all heroes wear capes, " + firstName;
+ if (wings === "drums" || wings ==="Drums") {h1.innerHTML= "🤯 try again " + firstName;
+        }
+    }
+
+      let wingButton = document.querySelector("button");
+      wingButton.addEventListener("click", flatsOnly);
+    
+    </script>
+    <h4>This page was coded by Robyn Hurt-Richardson, open sourced on Github, and hosted by Netlify</h4>
+  </body>
+  </div>
+</html>
