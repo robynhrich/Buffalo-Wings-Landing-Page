@@ -6,9 +6,10 @@
     <title>Buffalo Wings</title>
     <style>
       h1 {
-        text-align: center;
+        text-align:center ;
+        font-size: 60px;
         color: coral;
-        font-family: 'Hedvig Letters Serif', serif;
+        font-family: 'Playfair Display', serif;
         font-weight:900;
       }
       img {
@@ -23,7 +24,8 @@
         border: 1px solid whitesmoke;
         border-radius: 15px;
         padding: 15px;
-        font-family: 'Hedvig Letters Serif', serif;
+        font-family: 'Playfair Display', serif;
+        font-size: 50px;
       }
       h2:hover{
         transform: scale(1.5);
@@ -48,7 +50,14 @@
         color: whitesmoke;
       }
 
-      a {
+      h4{
+        text-align: center;
+        display: block;
+        color: coral;
+        font-family: 'Hedvig Letters Serif', serif;
+        
+      }
+      .recipe-link {
         text-align: center;
         display: block;
         color: coral;
@@ -66,7 +75,8 @@
       .wing-history{
         display: flex;
         justify-content: center;
-        justify-content: space-evenly;
+        justify-content: space-between;
+        margin: 0 auto;
         border: 1px solid whitesmoke;
         border-radius: 10px;
         padding: 10px;
@@ -76,6 +86,9 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Hedvig+Letters+Serif:opsz@12..24&display=swap" rel="stylesheet">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@800&display=swap" rel="stylesheet">
   </head>
 
   <body>
@@ -106,7 +119,7 @@
       created by restaurants include but aren't limited to unique combinations such as Blueberry BBQ Wing Sauce, Maple/Bacon Glaze, and the popular Lemon Pepper from Miami.
       </div>
       <br />
-      <a href="https://www.delish.com/cooking/g25808361/wing-sauce-recipes/"
+      <a href="https://www.delish.com/cooking/g25808361/wing-sauce-recipes/" class="recipe-link"
         >Click here to check out 35 wing sauce recipes</a
       >
     </p>
@@ -127,7 +140,7 @@ h1.innerHTML= "Not all heroes wear capes, " + firstName;
       wingButton.addEventListener("click", flatsOnly);
     
     </script>
-    <h4>This page was coded by <a href="https://github.com/robynhrich">Robyn H Richardson</a>, open sourced on <a href="https://github.com/robynhrich/Buffalo-Wings-Landing-Page">Github</a>, and hosted by Netlify</h4>
+    <h4>This page was coded by <a href="https://github.com/robynhrich">Robyn H Richardson</a>, open sourced on <a href="https://github.com/robynhrich/Buffalo-Wings-Landing-Page">Github</a>, and hosted by <a href="https://buffalowingsbeyond.netlify.app/">Netlify</a></h4>
   </body>
   </div>
 </html>
